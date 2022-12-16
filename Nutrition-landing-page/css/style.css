@@ -17,6 +17,7 @@ a {
 .page-layout {
   max-width: 1920px;
   height: 100%;
+  overflow: hidden;
 }
 
 main {
@@ -27,11 +28,11 @@ section.introdution-layout {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* padding: 70px 125.63px 25px 150px; */
-  /* padding: 70px 0 25px 0; */
+
+  padding: 70px 0 25px 0;
 }
 
-.left-side h3 {
+.main-introdution-layout-left-side h3 {
   width: 636px;
   font-family: "Spartan";
   font-style: normal;
@@ -41,11 +42,11 @@ section.introdution-layout {
   color: #86b472;
 }
 
-.left-side h3::first-line {
+.main-introdution-layout-left-side h3::first-line {
   font-weight: 600;
 }
 
-.left-side p {
+.main-introdution-layout-left-side p {
   width: 590px;
   font-family: "Segoe UI";
   font-style: normal;
@@ -56,7 +57,7 @@ section.introdution-layout {
   margin-top: 10px;
 }
 
-.left-side button {
+.main-introdution-layout-left-side button {
   width: 250px;
   height: 65px;
   margin-top: 30px;
@@ -73,15 +74,10 @@ section.introdution-layout {
   cursor: pointer;
 }
 
-.right-side {
-  padding-right: 42.37px;
-}
-
-.round {
+.main-introdution-layout-right-side-round {
   position: relative;
   width: 740px;
   height: 740px;
-  margin-top: 70px;
   border-radius: 50%;
   background: rgba(134, 180, 114, 0.15);
 }
@@ -96,7 +92,7 @@ section.introdution-layout {
 
 .leave-img-left {
   position: absolute;
-  width: 620px;
+  width: 100%;
   height: 550.01px;
   left: -222px;
   top: 77.18px;
@@ -106,10 +102,10 @@ section.introdution-layout {
 
 .leave-img-right {
   position: absolute;
-  width: 580.6px;
-  height: 517.9px;
-  right: -54.37px;
-  top: 90px;
+  width: 100%;
+  height: 556.9px;
+  right: -105.37px;
+  top: 57px;
   transform: matrix(-0.86, 0.52, 0.52, 0.86, 0, 0);
   z-index: 2;
   transform: rotate(-2deg);
@@ -137,14 +133,31 @@ span.border-circle-small {
   z-index: 1;
 }
 
-.feedback {
+.main-introdution-layout-right-side-feedback-container {
   position: absolute;
   width: 300px;
   height: 160px;
   background: #ffffff;
   box-shadow: 0px 9px 50px rgba(0, 0, 0, 0.17);
   border-radius: 15px;
-  transform: skewX(10deg);
+  padding: 5px;
+  /* transform: skewX(10deg); */
+  z-index: 99;
+}
+
+.main-introdution-layout-right-side-feedback-container::after {
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 162px;
+  /* top: 0; */
+  /* left: -24px; */
+  background-color: #545454;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  transform: translate(-30px, -80px) skewX(10deg);
+  transform-origin: top;
+  z-index: 4;
 }
 
 @font-face {

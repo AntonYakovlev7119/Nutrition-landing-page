@@ -46,10 +46,10 @@ navbar {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
-.nav-item:first-child {
+.header-nav-item:first-child {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +83,7 @@ span.underline {
   z-index: 999;
 } */
 
-.nav-item {
+.header-nav-item {
   font-family: "Segoe UI";
   font-style: normal;
   font-weight: 600;
