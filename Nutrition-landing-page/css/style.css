@@ -18,3 +18,136 @@ a {
   max-width: 1920px;
   height: 100%;
 }
+
+main {
+  min-height: 90vh;
+}
+
+section.introdution-layout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 70px 125.63px 25px 150px; */
+  /* padding: 70px 0 25px 0; */
+}
+
+.left-side h3 {
+  width: 636px;
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 85px;
+  color: #86b472;
+}
+
+.left-side h3::first-line {
+  font-weight: 600;
+}
+
+.left-side p {
+  width: 590px;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #545454;
+  margin-top: 10px;
+}
+
+.left-side button {
+  width: 250px;
+  height: 65px;
+  margin-top: 30px;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  background: linear-gradient(180.61deg, #98d67d 0.45%, #569f36 99.39%);
+  box-shadow: 0px 19px 42px rgba(134, 180, 114, 0.3);
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+.right-side {
+  padding-right: 42.37px;
+}
+
+.round {
+  position: relative;
+  width: 740px;
+  height: 740px;
+  margin-top: 70px;
+  border-radius: 50%;
+  background: rgba(134, 180, 114, 0.15);
+}
+
+.img-meal {
+  position: absolute;
+  width: 530px;
+  height: 530px;
+  margin: 105px 160px 105px 50px;
+  z-index: 3;
+}
+
+.leave-img-left {
+  position: absolute;
+  width: 620px;
+  height: 550.01px;
+  left: -222px;
+  top: 77.18px;
+  transform: rotate(7.63deg);
+  z-index: 2;
+}
+
+.leave-img-right {
+  position: absolute;
+  width: 580.6px;
+  height: 517.9px;
+  right: -54.37px;
+  top: 90px;
+  transform: matrix(-0.86, 0.52, 0.52, 0.86, 0, 0);
+  z-index: 2;
+  transform: rotate(-2deg);
+}
+
+span.border-circle-big {
+  position: absolute;
+  width: 640px;
+  height: 640px;
+  left: 50px;
+  top: 50px;
+  border: 2px solid #86b472;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+span.border-circle-small {
+  position: absolute;
+  width: 582px;
+  height: 588px;
+  top: 76px;
+  right: 109px;
+  border: 2px solid #86b472;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.feedback {
+  position: absolute;
+  width: 300px;
+  height: 160px;
+  background: #ffffff;
+  box-shadow: 0px 9px 50px rgba(0, 0, 0, 0.17);
+  border-radius: 15px;
+  transform: skewX(10deg);
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url(../fonts/Spartan.ttf);
+}
